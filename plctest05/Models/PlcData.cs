@@ -47,5 +47,23 @@
 
         // 위치 거리
         public short[] PositionMM { get; set; } = new short[10];
+
+        // 우측 UI용 M3000 ~ M3015
+        public bool M3000 { get; set; }
+        public bool M3001 { get; set; }
+        public bool M3002 { get; set; }
+        public bool M3003 { get; set; }
+        public bool M3004 { get; set; }
+        public bool M3005 { get; set; }
+        public bool M3006 { get; set; }
+        public bool M3007 { get; set; }
+        public bool M3008 { get; set; }
+        public bool M3009 { get; set; }
+        public bool M3010 { get; set; }
+        public bool M3011 { get; set; }
+        public bool M3012 { get; set; }
+        public bool M3013 { get; set; }
+        public bool M3014 { get; set; }
+        public bool M3015 { get; set; }
     }
 }

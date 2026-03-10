@@ -54,67 +54,92 @@ namespace plctest05
             try
             {
                 var d = plcService.ReadAll();
-                StringBuilder sb = new StringBuilder();
 
-                sb.AppendLine("========= 설비 상태 =========");
-                sb.AppendLine($"M200 : {d.M200_AutoRun}");
-                sb.AppendLine($"M201 : {d.M201_AutoStop}");
-                sb.AppendLine($"D0   : {d.D0_Error}");
+                // 왼쪽 기존 출력
+                StringBuilder leftSb = new StringBuilder();
 
-                sb.AppendLine();
-                sb.AppendLine("========= 초기화 상태 =========");
-                sb.AppendLine($"M122 : {d.M122}");
-                sb.AppendLine($"M127 : {d.M127}");
-                sb.AppendLine($"M132 : {d.M132}");
-                sb.AppendLine($"M137 : {d.M137}");
-                sb.AppendLine($"M142 : {d.M142}");
-                sb.AppendLine($"M147 : {d.M147}");
-                sb.AppendLine($"M152 : {d.M152}");
-                sb.AppendLine($"M157 : {d.M157}");
-                sb.AppendLine($"M162 : {d.M162}");
-                sb.AppendLine($"M167 : {d.M167}");
+                leftSb.AppendLine("========= 설비 상태 =========");
+                leftSb.AppendLine($"M200 : {d.M200_AutoRun}");
+                leftSb.AppendLine($"M201 : {d.M201_AutoStop}");
+                leftSb.AppendLine($"D0   : {d.D0_Error}");
 
-                sb.AppendLine();
-                sb.AppendLine("========= Loading =========");
-                sb.AppendLine($"M858 : {d.M858_GlassLoaded}");
-                sb.AppendLine($"M863 : {d.M863_NanoDone}");
-                sb.AppendLine($"D10  : {d.D10_WorkCount}");
+                leftSb.AppendLine();
+                leftSb.AppendLine("========= 초기화 상태 =========");
+                leftSb.AppendLine($"M122 : {d.M122}");
+                leftSb.AppendLine($"M127 : {d.M127}");
+                leftSb.AppendLine($"M132 : {d.M132}");
+                leftSb.AppendLine($"M137 : {d.M137}");
+                leftSb.AppendLine($"M142 : {d.M142}");
+                leftSb.AppendLine($"M147 : {d.M147}");
+                leftSb.AppendLine($"M152 : {d.M152}");
+                leftSb.AppendLine($"M157 : {d.M157}");
+                leftSb.AppendLine($"M162 : {d.M162}");
+                leftSb.AppendLine($"M167 : {d.M167}");
 
-                sb.AppendLine();
-                sb.AppendLine("========= Dry Zone =========");
-                sb.AppendLine($"X07  : {d.X07_UpperTray}");
-                sb.AppendLine($"X08  : {d.X08_LowerTray}");
-                sb.AppendLine($"L1   : {d.L1_DryStartUpper}");
-                sb.AppendLine($"L2   : {d.L2_DryStartLower}");
-                sb.AppendLine($"L3   : {d.L3_DryEndUpper}");
-                sb.AppendLine($"L4   : {d.L4_DryEndLower}");
+                leftSb.AppendLine();
+                leftSb.AppendLine("========= Loading =========");
+                leftSb.AppendLine($"M858 : {d.M858_GlassLoaded}");
+                leftSb.AppendLine($"M863 : {d.M863_NanoDone}");
+                leftSb.AppendLine($"D10  : {d.D10_WorkCount}");
 
-                sb.AppendLine();
-                sb.AppendLine("========= Unloading =========");
-                sb.AppendLine($"D20  : {d.D20_StackInput}");
-                sb.AppendLine($"D22  : {d.D22_DottingCount}");
-                sb.AppendLine($"D26  : {d.D26_StackOutCount}");
-                sb.AppendLine($"M906 : {d.M906_StackDone}");
-                sb.AppendLine($"M991 : {d.M991_DotDone}");
-                sb.AppendLine($"M922 : {d.M922_UVRun}");
-                sb.AppendLine($"M937 : {d.M937_StackOut}");
+                leftSb.AppendLine();
+                leftSb.AppendLine("========= Dry Zone =========");
+                leftSb.AppendLine($"X07  : {d.X07_UpperTray}");
+                leftSb.AppendLine($"X08  : {d.X08_LowerTray}");
+                leftSb.AppendLine($"L1   : {d.L1_DryStartUpper}");
+                leftSb.AppendLine($"L2   : {d.L2_DryStartLower}");
+                leftSb.AppendLine($"L3   : {d.L3_DryEndUpper}");
+                leftSb.AppendLine($"L4   : {d.L4_DryEndLower}");
 
-                sb.AppendLine();
-                sb.AppendLine("========= Robot Position Index =========");
+                leftSb.AppendLine();
+                leftSb.AppendLine("========= Unloading =========");
+                leftSb.AppendLine($"D20  : {d.D20_StackInput}");
+                leftSb.AppendLine($"D22  : {d.D22_DottingCount}");
+                leftSb.AppendLine($"D26  : {d.D26_StackOutCount}");
+                leftSb.AppendLine($"M906 : {d.M906_StackDone}");
+                leftSb.AppendLine($"M991 : {d.M991_DotDone}");
+                leftSb.AppendLine($"M922 : {d.M922_UVRun}");
+                leftSb.AppendLine($"M937 : {d.M937_StackOut}");
+
+                leftSb.AppendLine();
+                leftSb.AppendLine("========= Robot Position Index =========");
                 for (int i = 0; i < 10; i++)
                 {
-                    sb.AppendLine($"D{60 + i} : {d.PositionIndex[i]}");
+                    leftSb.AppendLine($"D{60 + i} : {d.PositionIndex[i]}");
                 }
 
-                sb.AppendLine();
-                sb.AppendLine("========= Robot Position (mm) =========");
+                leftSb.AppendLine();
+                leftSb.AppendLine("========= Robot Position (mm) =========");
                 int[] mmAddr = { 100, 102, 104, 106, 108, 110, 112, 114, 116, 118 };
                 for (int i = 0; i < 10; i++)
                 {
-                    sb.AppendLine($"D{mmAddr[i]} : {d.PositionMM[i]} mm");
+                    leftSb.AppendLine($"D{mmAddr[i]} : {d.PositionMM[i]} mm");
                 }
 
-                txtOutput.Text = sb.ToString();
+                txtLeftOutput.Text = leftSb.ToString();
+
+                // 오른쪽 M3000 ~ M3015 출력
+                StringBuilder rightSb = new StringBuilder();
+
+                rightSb.AppendLine("========= M3000 ~ M3015 =========");
+                rightSb.AppendLine($"M3000 : {d.M3000}");
+                rightSb.AppendLine($"M3001 : {d.M3001}");
+                rightSb.AppendLine($"M3002 : {d.M3002}");
+                rightSb.AppendLine($"M3003 : {d.M3003}");
+                rightSb.AppendLine($"M3004 : {d.M3004}");
+                rightSb.AppendLine($"M3005 : {d.M3005}");
+                rightSb.AppendLine($"M3006 : {d.M3006}");
+                rightSb.AppendLine($"M3007 : {d.M3007}");
+                rightSb.AppendLine($"M3008 : {d.M3008}");
+                rightSb.AppendLine($"M3009 : {d.M3009}");
+                rightSb.AppendLine($"M3010 : {d.M3010}");
+                rightSb.AppendLine($"M3011 : {d.M3011}");
+                rightSb.AppendLine($"M3012 : {d.M3012}");
+                rightSb.AppendLine($"M3013 : {d.M3013}");
+                rightSb.AppendLine($"M3014 : {d.M3014}");
+                rightSb.AppendLine($"M3015 : {d.M3015}");
+
+                txtRightOutput.Text = rightSb.ToString();
             }
             catch (Exception ex)
             {

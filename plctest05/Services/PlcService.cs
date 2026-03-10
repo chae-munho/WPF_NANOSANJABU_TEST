@@ -36,7 +36,6 @@ namespace plctest05.Services
                 return true;
             }
 
-            // 혹시 생성 후 변경되었을 수도 있으므로 다시 보장
             _plc.ActLogicalStationNumber = LogicalStationNumber;
 
             errorCode = _plc.Open();
@@ -178,7 +177,25 @@ namespace plctest05.Services
                 M906_StackDone = ReadBit("M906"),
                 M991_DotDone = ReadBit("M991"),
                 M922_UVRun = ReadBit("M922"),
-                M937_StackOut = ReadBit("M937")
+                M937_StackOut = ReadBit("M937"),
+
+                // 우측 UI용 M3000 ~ M3015
+                M3000 = ReadBit("M3000"),
+                M3001 = ReadBit("M3001"),
+                M3002 = ReadBit("M3002"),
+                M3003 = ReadBit("M3003"),
+                M3004 = ReadBit("M3004"),
+                M3005 = ReadBit("M3005"),
+                M3006 = ReadBit("M3006"),
+                M3007 = ReadBit("M3007"),
+                M3008 = ReadBit("M3008"),
+                M3009 = ReadBit("M3009"),
+                M3010 = ReadBit("M3010"),
+                M3011 = ReadBit("M3011"),
+                M3012 = ReadBit("M3012"),
+                M3013 = ReadBit("M3013"),
+                M3014 = ReadBit("M3014"),
+                M3015 = ReadBit("M3015")
             };
 
             // 위치 번호 D60 ~ D69

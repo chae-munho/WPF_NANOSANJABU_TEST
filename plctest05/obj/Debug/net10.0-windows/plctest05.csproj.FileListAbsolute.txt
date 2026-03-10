@@ -22,3 +22,4 @@ C:\ean\산자부\plctest05\plctest05\obj\Debug\net10.0-windows\plctest05.csproj.
 C:\ean\산자부\plctest05\plctest05\obj\Debug\net10.0-windows\plctest05.csproj.Up2Date
 C:\ean\산자부\plctest05\plctest05\obj\Debug\net10.0-windows\Interop.ActProgTypeLib.dll
 C:\ean\산자부\plctest05\plctest05\obj\Debug\net10.0-windows\plctest05.csproj.ResolveComReference.cache
+C:\ean\산자부\plctest05\plctest05\obj\Debug\net10.0-windows\plctest05.sourcelink.json
