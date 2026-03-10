@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|c:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|solutionrelative:plctest05\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|c:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\services\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|solutionrelative:plctest05\\services\\plcservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|c:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|solutionrelative:plctest05\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|c:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\models\\plcdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|solutionrelative:plctest05\\models\\plcdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|c:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\plctest05.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AD0F7B9B-B251-560B-53D3-A39FC27A0D8E}|plctest05\\plctest05.csproj|solutionrelative:plctest05\\plctest05.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "plctest05",
+              "DocumentMoniker": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\plctest05.csproj",
+              "RelativeDocumentMoniker": "plctest05\\plctest05.csproj",
+              "ToolTip": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\plctest05.csproj",
+              "RelativeToolTip": "plctest05\\plctest05.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-10T05:04:02.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlcData.cs",
+              "DocumentMoniker": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\Models\\PlcData.cs",
+              "RelativeDocumentMoniker": "plctest05\\Models\\PlcData.cs",
+              "ToolTip": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\Models\\PlcData.cs",
+              "RelativeToolTip": "plctest05\\Models\\PlcData.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T04:48:42.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlcService.cs",
+              "DocumentMoniker": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\Services\\PlcService.cs",
+              "RelativeDocumentMoniker": "plctest05\\Services\\PlcService.cs",
+              "ToolTip": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\Services\\PlcService.cs",
+              "RelativeToolTip": "plctest05\\Services\\PlcService.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAYwMIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T04:48:28.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "plctest05\\MainWindow.xaml",
+              "ToolTip": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\MainWindow.xaml",
+              "RelativeToolTip": "plctest05\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-10T04:43:59.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "plctest05\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\ean\\\uC0B0\uC790\uBD80\\plctest05\\plctest05\\MainWindow.xaml.cs",
+              "RelativeToolTip": "plctest05\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T04:43:58.48Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
