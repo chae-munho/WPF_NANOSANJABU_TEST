@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("plctest05")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+899fc81df2e2303b74b9305c3b387a5b64a0369a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+445f474bcf24697addf3e75ed9dd6f401237c6a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("plctest05")]
 [assembly: System.Reflection.AssemblyTitleAttribute("plctest05")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

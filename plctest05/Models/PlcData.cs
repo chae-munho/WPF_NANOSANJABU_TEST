@@ -65,5 +65,6 @@
         public bool M3013 { get; set; }
         public bool M3014 { get; set; }
         public bool M3015 { get; set; }
+        public bool M3017 { get; set; }
     }
 }

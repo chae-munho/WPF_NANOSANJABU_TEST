@@ -116,6 +116,28 @@ namespace plctest05.Services
             if (ret != 0)
                 throw new PlcException($"SetDevice 실패: {address}", ret);
         }
+        /// <summary>
+        /// M3017 ON
+        /// </summary>
+        public void SetM3017On()
+        {
+            WriteBit("M3017", true);
+        }
+
+        /// <summary>
+        /// M3017 OFF
+        /// </summary>
+        public void SetM3017Off()
+        {
+            WriteBit("M3017", false);
+        }
+        /// <summary>
+        /// D0 에 에러 코드 쓰기
+        /// </summary>
+        public void SetD0ErrorCode(short value)
+        {
+            WriteWord("D0", value);
+        }
 
         /// <summary>
         /// 워드 디바이스 쓰기
@@ -128,6 +150,7 @@ namespace plctest05.Services
             if (ret != 0)
                 throw new PlcException($"SetDevice 실패: {address}", ret);
         }
+       
 
         // -------------------------
         // High-level ReadAll
@@ -195,7 +218,8 @@ namespace plctest05.Services
                 M3012 = ReadBit("M3012"),
                 M3013 = ReadBit("M3013"),
                 M3014 = ReadBit("M3014"),
-                M3015 = ReadBit("M3015")
+                M3015 = ReadBit("M3015"),
+                M3017 = ReadBit("M3017")
             };
 
             // 위치 번호 D60 ~ D69
